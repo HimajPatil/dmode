@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #4d4d4d;
+    background-color: #f0f8ff;
+/* If color changed , then also change color in mainscript.js */
+}
+#light-btn{
+    display: none;
+}
+section {
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 400px;
+    width: 400px;
+}
+.section-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px auto 10px auto;
+}
+.section-top > img{
+    width: 65px;
+}
+.section-top > h1{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Source Sans Pro',Tahoma, Geneva, Verdana, sans-serif;
+}
+.section-mid{
+    font-size: 20px;
+    padding: 9px 79px;
+    text-align: center;
+    font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
+}
+.section-mid button{
+    background-color: rgb(202, 202, 202);
+    display: block;
+    font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px auto 10px auto;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.5s;
+    transition-property: all;
+}
+.section-mid button:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(184, 255, 184);
+}
+.section-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-bottom .fa{z-index: 100;position: relative;}
+.section-bottom a{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-decoration: unset;
+    margin: 0px 8px 5px 8px;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    color: rgb(0, 97, 187);
+    background-color: rgb(232, 248, 255);
+}
+.section-bottom a::before{
+    content: "";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: unset;
+    color: rgb(232, 248, 255);
+    margin: 6px 8px 5px 8px;
+    border-radius: 50%;
+    height: 56.5px;
+    width: 56.5px;
+    z-index: 1;
+    background-color: rgb(0, 97, 187);
+    transform: scale(0);
+    transition: 0.4s;
+    transition-property: all;
+}
+.section-bottom a:hover::before{
+    transform: scale(1);
+    color: white;
+}
+.section-bottom i{
+    font-size: 28px;
+}
+.section-bottom a:hover{
+    color: white;
+    z-index: 100;
+}
+/* _______________________________________________________ */
+.card.dark_sec{
+    background-color: black;
+    color: white;
+}
+.section-mid button.dark_mid_btn{
+    background-color: #616161;
+    color: #fff;
+}
+.section-mid button.dark_mid_btn:hover{
+    background-color: #ffffff;
+    color: darkgreen;
+}
